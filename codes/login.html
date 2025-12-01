@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<!--Otarie Bryan-->
+<!--2401423-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name=" Otarie Bryan" content="2401423">
+<!--to link css to html-->
+<link rel="stylesheet" href="../styless.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+  <ul>
+  <li><img src="../assets/logo.png" alt="logo" class="logosml"></li>
+   <li><a href="../index.html">Home<span class="material-icons">home</span></a></li>
+  <li><a href="login.html">Login/Signup</a></li>
+  <li><a href="product.html">Products</a></li>
+  <li><a href="About.html">About Us</a></li>
+  <li><a href="cart.html">Cart</a></li>
+  <li><a href="checkout.html">Checkout</a></li>
+  </ul>
+
+
+
+<body class="back">
+<!-- Button to open the modal login form -->
+<button class="press" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+      <img src="../assets/logo.png" alt="logo" class="logo">
+ 
+    <div class="container">
+       <p>Login to existing account</p>
+      <label for="uname"><b>Username</b></label>
+      <input id="log-username" type="text" placeholder="Enter Username" required>
+       <br><br>
+      <label for="psw"><b>Password</b></label>
+      <input id="log-password" type="password" placeholder="Enter Password" required>
+      <br><br>
+ 
+      <button type="button" onclick="loginUser()">Login</button>
+       <br><br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+     <br>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </br></br>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<!--sign up-->
+<!-- Button to open the modal -->
+<button class="press" onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id02" class="modal2">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">times;</span>
+  <form class="modal2-content" action="/action_page.php">
+    <div class="container1">
+
+      <center><img src="../assets/logo.png" alt="logo" class="logo"></center>
+      <h2>Sign Up</h2>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+       </br> </br>
+       <label for="email"><b>Email</b></label>
+       <input id="reg-email" type="text" placeholder="Enter Email" required>
+       </br></br>
+       <label for="username"><b>Username</b></label>
+       <input id="reg-username" type="text" placeholder="Create Username" required>
+       </br> </br>
+       <label for="DOB"><b>Date of birth</b></label>
+       <input type="date" placeholder="Enter date of birth" name="DOB" required>
+       </br> </br>
+       <label for="psw"><b>Password</b></label>
+      <input id="reg-password" type="password" placeholder="Enter Password" required>
+       </br> </br>
+       <label for="psw-repeat"><b>Repeat Password</b></label>
+       <input id="reg-confirm" type="password" placeholder="Confirm Password" required>
+       </br> </br>
+       <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+       </label>
+       </br> </br>
+      <center> <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p></center>
+          </br> </br>
+      <div class="clearfix">
+        <center><button type="button" class="signup" onclick="registerUser()">Sign Up</button></center>
+        </br> </br>
+        <center><button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button></center>
+       </div>
+    </div>
+  </form>
+</div>
+</section>
+<script src="login.js"></script>
+</body>
+</html>

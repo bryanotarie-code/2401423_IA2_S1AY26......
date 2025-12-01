@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Cart</title>
+<!--Otarie Bryan-->
+<!--2401423-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name=" Otarie Bryan" content="2401423">
+<link rel="stylesheet" href="../styless.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<ul>
+  <li><img src="../assets/logo.png" alt="logo" class="logosml"></li>
+   <li><a href="../index.html">Home<span class="material-icons">home</span></a></li>
+  <li><a href="login.html">Login/Signup</a></li>
+  <li><a href="product.html">Products</a></li>
+  <li><a href="About.html">About Us</a></li>
+  <li><a href="cart.html">Cart<span class="material-icons">shopping_cart</span></a></li>
+  <li><a href="checkout.html">Checkout</a></li>
+  </ul>
+<body class="product">
+</br></br></br>
+<h1 class="cart-title"> Your Shopping Cart</h1>
+
+<div id="cart-container"></div>
+
+<div class="cart-bottom">
+	<p class="totals">Subtotal: $<span id="cart-subtotal">0</span></p>
+<p class="totals">Discount: -$<span id="cart-discount">0</span></p>
+<p class="totals">Tax: +$<span id="cart-tax">0</span></p>
+
+<h2>Total: $<span id="cart-total">0</span></h2>
+    <a href="checkout.html"><button class="checkout-btn">Proceed to Checkout</button></a>
+</div>
+
+<script src="cart.js"></script>
+<script>displayCartUI();</script>
+
+</body>
+</html>

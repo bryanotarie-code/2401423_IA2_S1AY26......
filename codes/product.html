@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products Page</title>
+<!--Otarie Bryan-->
+<!--2401423-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name=" Otarie Bryan" content="2401423">
+<link rel="stylesheet" href="../styless.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+
+<body class="product">
+
+<ul>
+  <li><img src="../assets/logo.png" alt="logo" class="logosml"></li>
+   <li><a href="../index.html">Home<span class="material-icons">home</span></a></li>
+  <li><a href="login.html">Login/Signup</a></li>
+  <li><a href="product.html">Products</a></li>
+  <li><a href="About.html">About Us</a></li>
+  <li><a href="cart.html">Cart</a></li>
+  <li><a href="checkout.html">Checkout</a></li>
+  </ul>
+
+
+<center><u><h1 id="w_jew">Women's Jewelry</h1></u></center>
+<center><h2>Necklaces</h2></center>
+<div class="row_five">
+
+<!-- Product 1-->
+<div class="column_f">
+    <center class="imgbg">
+        <img src="../assets/neck7.jpg" alt="women's Accessories" style="width:90%"
+             onclick="document.getElementById('neck7_modal').style.display='block'">
+
+        <p class="p_text">Crystal Elegance Teardrop Necklace<br><br>Price: $159 USD</p>
+
+        <button onclick="addToCart('Crystal Elegance Teardrop Necklace',159,'../assets/neck7.jpg')">
+            Add to Cart
+        </button>
+
+    </center>
+</div>
+<!-- Product 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/neck6.webp" style="width:90%"
+     onclick="document.getElementById('neck6_modal').style.display='block'">
+
+<p class="p_text">Vintage Bridal Pearl Blossom Necklace<br><br>Price: $150 USD</p>
+<button onclick="addToCart('Vintage Bridal Pearl Blossom Necklace',150,'../assets/neck6.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- Product 3 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/neck5.jpg" style="width:90%"
+     onclick="document.getElementById('neck5_modal').style.display='block'">
+
+<p class="p_text">Golden Harmony Heart Layered Necklace Set<br><br>Price: $93 USD</p>
+<button onclick="addToCart('Golden Harmony Heart Layered Necklace Set',93,'../assets/neck5.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- Product 4 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/neck8.webp" style="width:90%"
+     onclick="document.getElementById('neck8_modal').style.display='block'">
+
+<p class="p_text">Royal Ruby Trio Layered Necklace Set<br><br>Price: $215 USD</p>
+<button onclick="addToCart('Royal Ruby Trio Layered Necklace Set',215,'../assets/neck8.webp')">Add to Cart</button>
+</center>
+</div>
+
+
+</div>
+<!--Modal for necklace section-->
+
+<!-- ========== MODAL: Vintage Bridal Pearl Blossom Necklace ========== -->
+
+<div id="neck6_modal" class="modal">
+  <span onclick="document.getElementById('neck6_modal').style.display='none'" class="close">&times;</span>
+
+  <form class="modal-content animate">
+    <center><img src="../assets/neck6.webp" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Vintage Bridal Pearl Blossom Necklace</b></p>
+    <p>Price: $150 USD</p>
+    <p>Elegant pearl blossom necklace tailored for weddings, anniversaries, and refined bridal styling.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Vintage Bridal Pearl Blossom Necklace',150,'../assets/neck6.webp')" class="cancelbtn">Add to Cart</button>
+      <br><br>
+      <button type="button" onclick="document.getElementById('neck6_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+
+<!-- ========== MODAL: Crystal Elegance Teardrop Necklace ========== -->
+<div id="neck7_modal" class="modal">
+  <span onclick="document.getElementById('neck7_modal').style.display='none'" class="close">&times;</span>
+
+  <form class="modal-content animate">
+    <center><img src="../assets/neck7.jpg" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Crystal Elegance Teardrop Necklace</b></p>
+    <p>Price: $159 USD</p>
+    <p>Luminous teardrop crystal — perfect for evening dinners, photoshoots and luxury events.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Crystal Elegance Teardrop Necklace',159,'../assets/neck7.jpg')" class="cancelbtn">Add to Cart</button>
+      <br><br>
+      <button onclick="document.getElementById('neck7_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+
+<!-- ========== MODAL: Golden Harmony Necklace ========== -->
+<div id="neck5_modal" class="modal">
+  <span onclick="document.getElementById('neck5_modal').style.display='none'" class="close">&times;</span>
+
+  <form class="modal-content animate">
+    <center><img src="../assets/neck5.jpg" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Golden Harmony Heart Layered Necklace Set</b></p>
+    <p>Price: $93 USD</p>
+    <p>Soft gold layered hearts — styled for romantic elegance & everyday luxury.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Golden Harmony Heart Layered Necklace Set',93,'../assets/neck5.jpg')" class="cancelbtn">Add to Cart</button>
+      <br><br>
+      <button onclick="document.getElementById('neck5_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+
+<!-- ========== MODAL: Ruby Trio Necklace Set ========== -->
+<div id="neck8_modal" class="modal">
+  <span onclick="document.getElementById('neck8_modal').style.display='none'" class="close">&times;</span>
+
+  <form class="modal-content animate">
+    <center><img src="../assets/neck8.webp" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Royal Ruby Trio Layered Necklace Set</b></p>
+    <p>Price: $215 USD</p>
+    <p>A bold ruby layered set — built for red carpet glamour & formal excellence.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Royal Ruby Trio Layered Necklace Set',215,'../assets/neck8.webp')" class="cancelbtn">Add to Cart</button>
+      <br><br>
+      <button onclick="document.getElementById('neck8_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+	
+	
+
+<!--Braclet Section-->
+
+<center><h2 id="Braclets">Braclets<h2></center>
+<div class="row_five">
+<!-- PRODUCT 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/bra3.jpg" style="width:90%"
+     onclick="document.getElementById('bra3_modal').style.display='block'">
+
+<p class="p_text">Gold Marquise Crystal Bracelet<br><br>Price: $135 USD</p>
+<button onclick="addToCart('Gold Marquise Crystal Bracelet',135,'../assets/bra3.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/bra4.jpg" style="width:90%"
+     onclick="document.getElementById('bra4_modal').style.display='block'">
+
+<p class="p_text">Prestige Luxe Golden Stack Bracelet Set<br><br>Price: $375 USD</p>
+<button onclick="addToCart('Prestige Luxe Golden Stack Bracelet Set',375,'../assets/bra4.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/bra5.webp" style="width:90%"
+     onclick="document.getElementById('bra5_modal').style.display='block'">
+
+<p class="p_text">Opulence Shimmer Multi-Layer Bracelet Set<br><br>Price: $298 USD</p>
+<button onclick="addToCart('Opulence Shimmer Multi-Layer Bracelet Set',298,'../assets/bra5.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/bra6.webp" style="width:90%"
+     onclick="document.getElementById('bra6_modal').style.display='block'">
+
+<p class="p_text">Aurora Luxe Spectrum Bracelet<br><br>Price: $349 USD</p>
+<button onclick="addToCart('Aurora Luxe Spectrum Bracelet',349,'../assets/bra6.webp')">Add to Cart</button>
+</center>
+</div></div>
+
+<!--modal for Braclets section-->
+<!-- ========== MODAL: Gold Marquise Crystal Bracelet ========== -->
+<div id="bra3_modal" class="modal">
+  <span onclick="document.getElementById('bra3_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/bra3.jpg" style="width:60%;border-radius:8px;"></center>
+    <p><b>Gold Marquise Crystal Bracelet</b></p>
+    <p>Price: $135 USD</p>
+    <p>Elegantly cut marquise stones set in gold plating — brilliance with every wrist turn.</p>
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Gold Marquise Crystal Bracelet',135,'../assets/bra3.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('bra3_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Golden Stack Bracelet Set ========== -->
+<div id="bra4_modal" class="modal">
+  <span onclick="document.getElementById('bra4_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/bra4.jpg" style="width:60%;border-radius:8px;"></center>
+    <p><b>Prestige Luxe Golden Stack Bracelet Set</b></p>
+    <p>Price: $375 USD</p>
+    <p>Five-piece luxury stacking bracelet ensemble — regal shine, bold fashion impact.</p>
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Prestige Luxe Golden Stack Bracelet Set',375,'../assets/bra4.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('bra4_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Multi-Layer Bracelet Set ========== -->
+<div id="bra5_modal" class="modal">
+  <span onclick="document.getElementById('bra5_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/bra5.webp" style="width:60%;border-radius:8px;"></center>
+    <p><b>Opulence Shimmer Multi-Layer Bracelet Set</b></p>
+    <p>Price: $298 USD</p>
+    <p>Opal-textured shimmer layers — maximum glow and radiant wrist-catching presence.</p>
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Opulence Shimmer Multi-Layer Bracelet Set',298,'../assets/bra5.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('bra5_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Aurora Luxe Bracelet ========== -->
+<div id="bra6_modal" class="modal">
+  <span onclick="document.getElementById('bra6_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/bra6.webp" style="width:60%;border-radius:8px;"></center>
+    <p><b>Aurora Luxe Spectrum Bracelet</b></p>
+    <p>Price: $349 USD</p>
+    <p>Spectrum-reflective cuts create glowing movement and elite luxury styling.</p>
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Aurora Luxe Spectrum Bracelet',349,'../assets/bra6.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('bra6_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!--Earrings Section-->
+
+<center><h2 id="earrings">Earrings<h2></center>
+<div class="row_five">
+
+<!-- PRODUCT 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/er2.webp" style="width:90%"
+     onclick="document.getElementById('er2_modal').style.display='block'">
+
+<p class="p_text">Imperial Heritage Diamond Drop Earrings<br><br>Price: $285 USD</p>
+<button onclick="addToCart('Imperial Heritage Diamond Drop Earrings',285,'../assets/er2.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/er3.jpg" style="width:90%"
+     onclick="document.getElementById('er3_modal').style.display='block'">
+
+<p class="p_text">Eternal Twist Sterling Knot Studs<br><br>Price: $110 USD</p>
+<button onclick="addToCart('Eternal Twist Sterling Knot Studs',110,'../assets/er3.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/er4.webp" style="width:90%"
+     onclick="document.getElementById('er4_modal').style.display='block'">
+
+<p class="p_text">Crimson Royale Victorian Earrings<br><br>Price: $245 USD</p>
+<button onclick="addToCart('Crimson Royale Victorian Earrings',245,'../assets/er4.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/er5.webp" style="width:90%"
+     onclick="document.getElementById('er5_modal').style.display='block'">
+
+<p class="p_text">Midnight Sapphire Royal Teardrops<br><br>Price: $320 USD</p>
+<button onclick="addToCart('Midnight Sapphire Royal Teardrops',320,'../assets/er5.webp')">Add to Cart</button>
+</center>
+</div>
+
+</div>
+
+<!--modal for earring section-->
+
+<!-- ========== MODAL: Imperial Heritage Earrings ========== -->
+<div id="er2_modal" class="modal">
+  <span onclick="document.getElementById('er2_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/er2.webp" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Imperial Heritage Diamond Drop Earrings</b></p>
+    <p>Price: $285 USD</p>
+    <p>Long teardrop-cut diamonds that shimmer with every turn — crafted for elegance & luxury glamour.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Imperial Heritage Diamond Drop Earrings',285,'../assets/er2.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('er2_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Sterling Knot Studs ========== -->
+<div id="er3_modal" class="modal">
+  <span onclick="document.getElementById('er3_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/er3.jpg" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Eternal Twist Sterling Knot Studs</b></p>
+    <p>Price: $110 USD</p>
+    <p>Minimal but poetic — sterling silver knot design representing infinity & eternal connection.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Eternal Twist Sterling Knot Studs',110,'../assets/er3.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('er3_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Victorian Crimson Earrings ========== -->
+<div id="er4_modal" class="modal">
+  <span onclick="document.getElementById('er4_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/er4.webp" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Crimson Royale Victorian Earrings</b></p>
+    <p>Price: $245 USD</p>
+    <p>Victorian–inspired ruby center stones set in ornate gold craftsmanship — museum–grade luxury.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Crimson Royale Victorian Earrings',245,'../assets/er4.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('er4_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Sapphire Teardrop Earrings ========== -->
+<div id="er5_modal" class="modal">
+  <span onclick="document.getElementById('er5_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/er5.webp" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Midnight Sapphire Royal Teardrops</b></p>
+    <p>Price: $320 USD</p>
+    <p>Deep sapphire ocean tones encased in tear-shaped diamonds — dazzling under evening lights.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Midnight Sapphire Royal Teardrops',320,'../assets/er5.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('er5_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+
+<center><u><h1 id="w_acc">Women's Accessories</h1></u></center>
+
+<center><h2>Purses<h2></center>
+<div class="row_five">
+
+<!-- PURSE 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/pr3.jpeg" style="width:90%"
+     onclick="document.getElementById('pr3_modal').style.display='block'">
+
+<p class="p_text">Opaline Noir Crystal Lattice Shoulder Bag<br><br>Price: $425 USD</p>
+<button onclick="addToCart('Opaline Noir Crystal Lattice Shoulder Bag',425,'../assets/pr3.jpeg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- PURSE 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/pr4.webp" style="width:90%"
+     onclick="document.getElementById('pr4_modal').style.display='block'">
+
+<p class="p_text">Ivory Royale Quilted Chain Bag<br><br>Price: $485 USD</p>
+<button onclick="addToCart('Ivory Royale Quilted Chain Bag',485,'../assets/pr4.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- PURSE 3 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/pur.webp" style="width:90%"
+     onclick="document.getElementById('pur_modal').style.display='block'">
+
+<p class="p_text">Emerald Luxe Evening Clutch<br><br>Price: $395 USD</p>
+<button onclick="addToCart('Emerald Luxe Evening Clutch',395,'../assets/pur.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- PURSE 4 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/pur1.webp" style="width:90%"
+     onclick="document.getElementById('pur1_modal').style.display='block'">
+
+<p class="p_text">Sakura Blossom Artistry Handbag<br><br>Price: $285 USD</p>
+<button onclick="addToCart('Sakura Blossom Artistry Handbag',285,'../assets/pur1.webp')">Add to Cart</button>
+</center>
+</div>
+
+</div>
+
+<!--modal for purse section-->
+<!-- ========== MODAL: Opaline Noir ========== -->
+<div id="pr3_modal" class="modal">
+  <span onclick="document.getElementById('pr3_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/pr3.jpeg" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Opaline Noir Crystal Lattice Shoulder Bag</b></p>
+    <p>Price: $425 USD</p>
+    <p>Black velvet luxury with crystal-studded lattice detailing — ideal for upscale occasions & cocktail events.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Opaline Noir Crystal Lattice Shoulder Bag',425,'../assets/pr3.jpeg')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('pr3_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Ivory Royale Quilted Bag ========== -->
+<div id="pr4_modal" class="modal">
+  <span onclick="document.getElementById('pr4_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/pr4.webp" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Ivory Royale Quilted Chain Bag</b></p>
+    <p>Price: $485 USD</p>
+    <p>Classic quilted ivory purse with gold chain strap — elegant, timeless, a luxury wardrobe essential.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Ivory Royale Quilted Chain Bag',485,'../assets/pr4.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('pr4_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Emerald Luxe Clutch ========== -->
+<div id="pur_modal" class="modal">
+  <span onclick="document.getElementById('pur_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/pur.webp" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Emerald Luxe Evening Clutch</b></p>
+    <p>Price: $395 USD</p>
+    <p>Rich emerald tone with diamond-border clasp — evening elegance crafted for spotlight moments.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Emerald Luxe Evening Clutch',395,'../assets/pur.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('pur_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Sakura Blossom Bag ========== -->
+<div id="pur1_modal" class="modal">
+  <span onclick="document.getElementById('pur1_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/pur1.webp" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Sakura Blossom Artistry Handbag</b></p>
+    <p>Price: $285 USD</p>
+    <p>Cherry-blossom crafted artwork bag — soft pink tones, modern shape, premium aesthetic finish.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Sakura Blossom Artistry Handbag',285,'../assets/pur1.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('pur1_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!--glasses section-->
+<center><h2 id="glasses">Glasses<h2></center>
+<div class="row_five">
+<!-- GLASSES 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/gl.webp" style="width:90%"
+     onclick="document.getElementById('gl_modal').style.display='block'">
+
+<p class="p_text">Danamy Crystal Rose Sunglasses<br><br>Price: $395 USD</p>
+<button onclick="addToCart('Danamy Crystal Rose Sunglasses',395,'../assets/gl.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- GLASSES 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/gl1.webp" style="width:90%"
+     onclick="document.getElementById('gl1_modal').style.display='block'">
+
+<p class="p_text">Royale Tortoise-Gold Cat-Eye Frames<br><br>Price: $520 USD</p>
+<button onclick="addToCart('Royale Tortoise-Gold Cat-Eye Frames',520,'../assets/gl1.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- GLASSES 3 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/gl2.jpg" style="width:90%"
+     onclick="document.getElementById('gl2_modal').style.display='block'">
+
+<p class="p_text">Crystal Clarity Oversized Frames<br><br>Price: $280 USD</p>
+<button onclick="addToCart('Crystal Clarity Oversized Frames',280,'../assets/gl2.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- GLASSES 4 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/gl3.jpg" style="width:90%"
+     onclick="document.getElementById('gl3_modal').style.display='block'">
+
+<p class="p_text">Crystal Amber Luxe Clear-Frame Spectacles<br><br>Price: $320 USD</p>
+<button onclick="addToCart('Crystal Amber Luxe Clear-Frame Spectacles',320,'../assets/gl3.jpg')">Add to Cart</button>
+</center>
+</div>
+
+</div>
+
+<!-- Modal for the glasses section-->
+<!-- ========== MODAL: Danamy Crystal Rose Sunglasses ========== -->
+<div id="gl_modal" class="modal">
+  <span onclick="document.getElementById('gl_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/gl.webp" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Danamy Crystal Rose Sunglasses</b></p>
+    <p>Price: $395 USD</p>
+    <p>Soft pink tint & crystal-rose gloss finish — luxury outdoor elegance & summer brunch perfection.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Danamy Crystal Rose Sunglasses',395,'../assets/gl.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('gl_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+
+<!-- ========== MODAL: Royale Tortoise-Gold Cat-Eye ========== -->
+<div id="gl1_modal" class="modal">
+  <span onclick="document.getElementById('gl1_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/gl1.webp" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Royale Tortoise-Gold Cat-Eye Frames</b></p>
+    <p>Price: $520 USD</p>
+    <p>Vintage tortoise shell pattern with gold-rim luxury detailing — bold, high-class, editorial-ready.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Royale Tortoise-Gold Cat-Eye Frames',520,'../assets/gl1.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('gl1_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+
+<!-- ========== MODAL: Crystal Clarity Oversized ========== -->
+<div id="gl2_modal" class="modal">
+  <span onclick="document.getElementById('gl2_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/gl2.jpg" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Crystal Clarity Oversized Frames</b></p>
+    <p>Price: $280 USD</p>
+    <p>Clear-frame oversized luxury — sleek, modern & influencer-style streetwear statement.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Crystal Clarity Oversized Frames',280,'../assets/gl2.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('gl2_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+
+<!-- ========== MODAL: Crystal Amber Luxe Glasses ========== -->
+<div id="gl3_modal" class="modal">
+  <span onclick="document.getElementById('gl3_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/gl3.jpg" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Crystal Amber Luxe Clear-Frame Spectacles</b></p>
+    <p>Price: $320 USD</p>
+    <p>Amber tinted frame edges with crystal-cut sides — corporate luxury meets media-star fashion.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Crystal Amber Luxe Clear-Frame Spectacles',320,'../assets/gl3.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('gl3_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!--Hairpin section-->
+<center><h2 id="hairpin">Hairpin<h2></center>
+<div class="row_five">
+
+<!-- HAIRPIN 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/hp.jpg" style="width:90%"
+     onclick="document.getElementById('hp_modal').style.display='block'">
+
+<p class="p_text">Pearl Royale Couture Clip Set<br><br>Price: $120 USD (Set of 5)</p>
+<button onclick="addToCart('Pearl Royale Couture Clip Set',120,'../assets/hp.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- HAIRPIN 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/hp1.jpg" style="width:90%"
+     onclick="document.getElementById('hp1_modal').style.display='block'">
+
+<p class="p_text">Imperial Pearl Blossom Hair Pins<br><br>Price: $150 USD (Set of 6)</p>
+<button onclick="addToCart('Imperial Pearl Blossom Hair Pins',150,'../assets/hp1.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- HAIRPIN 3 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/hp2.webp" style="width:90%"
+     onclick="document.getElementById('hp2_modal').style.display='block'">
+
+<p class="p_text">Noir Crystal Elegance Hair Pins<br><br>Price: $95 USD (Set of 3)</p>
+<button onclick="addToCart('Noir Crystal Elegance Hair Pins',95,'../assets/hp2.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- HAIRPIN 4 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/hp3.jpg" style="width:90%"
+     onclick="document.getElementById('hp3_modal').style.display='block'">
+
+<p class="p_text">Rose Gold Pearl Symphony Comb<br><br>Price: $135 USD</p>
+<button onclick="addToCart('Rose Gold Pearl Symphony Comb',135,'../assets/hp3.jpg')">Add to Cart</button>
+</center>
+</div>
+
+</div>
+
+<!--Modal for hairpin section-->
+<!-- ========== MODAL: Pearl Royale Couture Clip Set ========== -->
+<div id="hp_modal" class="modal">
+  <span onclick="document.getElementById('hp_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/hp.jpg" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Pearl Royale Couture Clip Set</b></p>
+    <p>Price: $120 USD (Set of 5)</p>
+    <p>Elegant pearl cluster clips — perfect for wedding hairstyles & luxury romantic looks.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Pearl Royale Couture Clip Set',120,'../assets/hp.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('hp_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Imperial Pearl Blossom Pins ========== -->
+<div id="hp1_modal" class="modal">
+  <span onclick="document.getElementById('hp1_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/hp1.jpg" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Imperial Pearl Blossom Hair Pins</b></p>
+    <p>Price: $150 USD (Set of 6)</p>
+    <p>Delicate blossom pearl pins — perfect for formal buns, bridal curls, and styled updos.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Imperial Pearl Blossom Hair Pins',150,'../assets/hp1.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('hp1_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Noir Crystal Pins ========== -->
+<div id="hp2_modal" class="modal">
+  <span onclick="document.getElementById('hp2_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/hp2.webp" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Noir Crystal Elegance Hair Pins</b></p>
+    <p>Price: $95 USD (Set of 3)</p>
+    <p>Bold black crystal accents — gothic elegance meets modern fashion styling.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Noir Crystal Elegance Hair Pins',95,'../assets/hp2.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('hp2_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Rose Gold Pearl Comb ========== -->
+<div id="hp3_modal" class="modal">
+  <span onclick="document.getElementById('hp3_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+    <center><img src="../assets/hp3.jpg" style="width:60%;border-radius:8px;"></center>
+
+    <p><b>Rose Gold Pearl Symphony Comb</b></p>
+    <p>Price: $135 USD</p>
+    <p>Handcrafted floral comb — rose-gold finish with freshwater pearl centerpiece.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Rose Gold Pearl Symphony Comb',135,'../assets/hp3.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('hp3_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!--mens section-->
+
+<center><u><h1 id="M_jew">Men's Jewelry</h1></u></center>
+<center><h2>Chains<h2></center>
+<div class="row_five">
+<!-- CHAIN 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/ch.webp" style="width:90%"
+     onclick="document.getElementById('ch_modal').style.display='block'">
+
+<p class="p_text">Diamond-Pavé Cuban Link Chain (Silver)<br><br>Price: $420 USD</p>
+<button onclick="addToCart('Diamond-Pavé Cuban Link Chain (Silver)',420,'../assets/ch.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- CHAIN 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/ch1.webp" style="width:90%"
+     onclick="document.getElementById('ch1_modal').style.display='block'">
+
+<p class="p_text">5-Layer Gold Rope Chain Set<br><br>Price: $350 USD (Full Set)</p>
+<button onclick="addToCart('5-Layer Gold Rope Chain Set',350,'../assets/ch1.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- CHAIN 3 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/ch2.webp" style="width:90%"
+     onclick="document.getElementById('ch2_modal').style.display='block'">
+
+<p class="p_text">Silver Byzantine Link Chain<br><br>Price: $180 USD</p>
+<button onclick="addToCart('Silver Byzantine Link Chain',180,'../assets/ch2.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- CHAIN 4 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/ch4.jpg" style="width:90%"
+     onclick="document.getElementById('ch4_modal').style.display='block'">
+
+<p class="p_text">Royal Tri-Tone Iced Cuban Link Chain<br><br>Price: $4,950 USD</p>
+<button onclick="addToCart('Royal Tri-Tone Iced Cuban Link Chain',4950,'../assets/ch4.jpg')">Add to Cart</button>
+</center>
+</div>
+
+</div>
+<!--Modal for chain section-->
+<!-- ========== MODAL: Diamond-Pavé Cuban Link (Silver) ========== -->
+<div id="ch_modal" class="modal">
+  <span onclick="document.getElementById('ch_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+
+    <center><img src="../assets/ch.webp" style="width:60%;border-radius:8px;"></center>
+    <p><b>Diamond-Pavé Cuban Link Chain (Silver)</b></p>
+    <p>Price: $420 USD</p>
+    <p>High-grade silver Cuban chain fully iced with pavé diamonds — premium street luxury.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Diamond-Pavé Cuban Link Chain (Silver)',420,'../assets/ch.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('ch_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: 5-Layer Gold Rope Set ========== -->
+<div id="ch1_modal" class="modal">
+  <span onclick="document.getElementById('ch1_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+
+    <center><img src="../assets/ch1.webp" style="width:60%;border-radius:8px;"></center>
+    <p><b>5-Layer Gold Rope Chain Set</b></p>
+    <p>Price: $350 USD (Full Set)</p>
+    <p>Stacked rope chains for strong presence — elite gold finish worn by celebrities & rappers.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('5-Layer Gold Rope Chain Set',350,'../assets/ch1.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('ch1_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Byzantine Silver Chain ========== -->
+<div id="ch2_modal" class="modal">
+  <span onclick="document.getElementById('ch2_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+
+    <center><img src="../assets/ch2.webp" style="width:60%;border-radius:8px;"></center>
+    <p><b>Silver Byzantine Link Chain</b></p>
+    <p>Price: $180 USD</p>
+    <p>Medieval inspired link architecture — thick, durable, masculine & timeless.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Silver Byzantine Link Chain',180,'../assets/ch2.webp')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('ch2_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!-- ========== MODAL: Royal Tri-Tone Iced Cuban Chain ========== -->
+<div id="ch4_modal" class="modal">
+  <span onclick="document.getElementById('ch4_modal').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate">
+
+    <center><img src="../assets/ch4.jpg" style="width:60%;border-radius:8px;"></center>
+    <p><b>Royal Tri-Tone Iced Cuban Link Chain</b></p>
+    <p>Price: $4,950 USD</p>
+    <p>Tri-tone luxury Cuban link drenched in VVS sparkle — statement piece for kings only.</p>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="addToCart('Royal Tri-Tone Iced Cuban Link Chain',4950,'../assets/ch4.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+      <button onclick="document.getElementById('ch4_modal').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </form>
+</div>
+
+<!--Luxury Watches section-->
+<center><h2 id="watches">Luxury Watches<h2></center>
+<div class="row_five">
+<!-- WATCH 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/wa.jpeg" style="width:90%"
+     onclick="document.getElementById('wa_modal').style.display='block'">
+
+<p class="p_text">Eternal Frost King Set<br><br>Price: $1,350 USD</p>
+<button onclick="addToCart('Eternal Frost King Set',1350,'../assets/wa.jpeg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- WATCH 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/wa1.webp" style="width:90%"
+     onclick="document.getElementById('wa1_modal').style.display='block'">
+
+<p class="p_text">Imperial Chromatic Chronograph – Brown Dial Executive<br><br>Price: $2,200 USD</p>
+<button onclick="addToCart('Imperial Chromatic Chronograph – Brown Dial Executive Edition',2200,'../assets/wa1.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- WATCH 3 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/wa2.webp" style="width:90%"
+     onclick="document.getElementById('wa2_modal').style.display='block'">
+
+<p class="p_text">Sultan’s Gold Meteor – Iced Luxury Timepiece<br><br>Price: $2,950 USD</p>
+<button onclick="addToCart('Sultan’s Gold Meteor – Gold Iced Luxury Timepiece',2950,'../assets/wa2.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- WATCH 4 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/wa3.jpg" style="width:90%"
+     onclick="document.getElementById('wa3_modal').style.display='block'">
+
+<p class="p_text">Regal Nightmaster Diamond Edition<br><br>Price: $5,800 USD</p>
+<button onclick="addToCart('Regal Nightmaster Diamond Edition – Two-Tone Rolex Style',5800,'../assets/wa3.jpg')">Add to Cart</button>
+</center>
+</div>
+
+</div>
+
+<!--Modal for Luxury Watches section-->
+<!-- ========== MODAL: Eternal Frost King Set ========== -->
+<div id="wa_modal" class="modal">
+<span onclick="document.getElementById('wa_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+<center><img src="../assets/wa.jpeg" style="width:60%;border-radius:8px;"></center>
+
+<p><b>Eternal Frost King Set</b></p>
+<p>Price: $1,350 USD</p>
+<p>Silver iced body with frosted links — durable high-shine design made for dominance & class.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Eternal Frost King Set',1350,'../assets/wa.jpeg')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('wa_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+<!-- ========== MODAL: Imperial Chromatic Chronograph ========== -->
+<div id="wa1_modal" class="modal">
+<span onclick="document.getElementById('wa1_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+<center><img src="../assets/wa1.webp" style="width:60%;border-radius:8px;"></center>
+
+<p><b>Imperial Chromatic Chronograph – Brown Dial Executive Edition</b></p>
+<p>Price: $2,200 USD</p>
+<p>Brown-dial premium chronograph crafted for business elites — steel rim, gold accents, pure authority.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Imperial Chromatic Chronograph – Brown Dial Executive Edition',2200,'../assets/wa1.webp')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('wa1_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+<!-- ========== MODAL: Sultan’s Gold Meteor ========== -->
+<div id="wa2_modal" class="modal">
+<span onclick="document.getElementById('wa2_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+<center><img src="../assets/wa2.webp" style="width:60%;border-radius:8px;"></center>
+
+<p><b>Sultan’s Gold Meteor – Gold Iced Luxury Timepiece</b></p>
+<p>Price: $2,950 USD</p>
+<p>Fully iced meteor-gold casing — royalty-level brilliance, built to stunt under city nightlife.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Sultan’s Gold Meteor – Gold Iced Luxury Timepiece',2950,'../assets/wa2.webp')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('wa2_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+<!-- ========== MODAL: Regal Nightmaster Diamond Edition ========== -->
+<div id="wa3_modal" class="modal">
+<span onclick="document.getElementById('wa3_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+<center><img src="../assets/wa3.jpg" style="width:60%;border-radius:8px;"></center>
+
+<p><b>Regal Nightmaster Diamond Edition – Two-Tone Rolex Style</b></p>
+<p>Price: $5,800 USD</p>
+<p>Black-Gold executive luxury watch — iced bezel, diamond hour markers, heavyweight prestige wear.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Regal Nightmaster Diamond Edition – Two-Tone Rolex Style',5800,'../assets/wa3.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('wa3_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+<!--Mens ring section-->
+<center><h2 id="rings">Men Rings<h2></center>
+<div class="row_five">
+
+<!-- RING 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/ring2.webp" style="width:90%"
+     onclick="document.getElementById('ring2_modal').style.display='block'">
+
+<p class="p_text">Regal Lion-Head Signet Ring<br><br>Price: $1,950 USD</p>
+<button onclick="addToCart('Regal Lion-Head Signet Ring',1950,'../assets/ring2.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- RING 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/ring3.webp" style="width:90%"
+     onclick="document.getElementById('ring3_modal').style.display='block'">
+
+<p class="p_text">Imperial Diamond-Cluster Ring<br><br>Price: $4,800 USD</p>
+<button onclick="addToCart('Imperial Diamond-Cluster Ring',4800,'../assets/ring3.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- RING 3 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/ring4.webp" style="width:90%"
+     onclick="document.getElementById('ring4_modal').style.display='block'">
+
+<p class="p_text">Vintage Onyx Royalty Ring<br><br>Price: $1,350 USD</p>
+<button onclick="addToCart('Vintage Onyx Royalty Ring',1350,'../assets/ring4.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- RING 4 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/ring5.webp" style="width:90%"
+     onclick="document.getElementById('ring5_modal').style.display='block'">
+
+<p class="p_text">Sapphire Crest Sovereign Ring<br><br>Price: $2,600 USD</p>
+<button onclick="addToCart('Sapphire Crest Sovereign Ring',2600,'../assets/ring5.webp')">Add to Cart</button>
+</center>
+</div>
+</div>
+
+<!--modal for ring section-->
+<!-- ========== MODAL: Lion-Head Signet ========== -->
+<div id="ring2_modal" class="modal">
+<span onclick="document.getElementById('ring2_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/ring2.webp" style="width:60%;border-radius:8px;"></center>
+<p><b>Regal Lion-Head Signet Ring</b></p>
+<p>Price: $1,950 USD</p>
+<p>Bold sovereign-style lion engraving — symbol of dominance, strength and masculine prestige.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Regal Lion-Head Signet Ring',1950,'../assets/ring2.webp')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('ring2_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+<!-- ========== MODAL: Imperial Diamond-Cluster ========== -->
+<div id="ring3_modal" class="modal">
+<span onclick="document.getElementById('ring3_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/ring3.webp" style="width:60%;border-radius:8px;"></center>
+<p><b>Imperial Diamond-Cluster Ring</b></p>
+<p>Price: $4,800 USD</p>
+<p>Multi-diamond crown centerpiece — elite display of power, wealth & elite lifestyle casing.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Imperial Diamond-Cluster Ring',4800,'../assets/ring3.webp')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('ring3_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+<!-- ========== MODAL: Vintage Onyx Royalty ========== -->
+<div id="ring4_modal" class="modal">
+<span onclick="document.getElementById('ring4_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/ring4.webp" style="width:60%;border-radius:8px;"></center>
+<p><b>Vintage Onyx Royalty Ring</b></p>
+<p>Price: $1,350 USD</p>
+<p>Deep black onyx with golden bezel — refined gentleman’s classic, powerful & timeless.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Vintage Onyx Royalty Ring',1350,'../assets/ring4.webp')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('ring4_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+<!-- ========== MODAL: Sapphire Crest Sovereign ========== -->
+<div id="ring5_modal" class="modal">
+<span onclick="document.getElementById('ring5_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/ring5.webp" style="width:60%;border-radius:8px;"></center>
+<p><b>Sapphire Crest Sovereign Ring</b></p>
+<p>Price: $2,600 USD</p>
+<p>Vibrant royal blue sapphire stone — handcrafted metalwork fit for kings & high-rank elites.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Sapphire Crest Sovereign Ring',2600,'../assets/ring5.webp')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('ring5_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+<!--Men Jewelry Sets-->
+
+<center><h2 id="sets">Men Jewelry Sets<h2></center>
+<div class="row_five">
+
+<!-- SET 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/men12.jpg" style="width:90%"
+     onclick="document.getElementById('set12_modal').style.display='block'">
+
+<p class="p_text">Full Men’s Iced Set (Silver)<br><br>Price: $780 USD (Set)</p>
+<button onclick="addToCart('Full Men’s Iced Set (Silver)',780,'../assets/men12.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- SET 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/mennn.jpg" style="width:90%"
+     onclick="document.getElementById('setGold_modal').style.display='block'">
+
+<p class="p_text">Royal Frosted Cuban Set (Gold)<br><br>Price: $820 USD (Set)</p>
+<button onclick="addToCart('Royal Frosted Cuban Set (Gold)',820,'../assets/mennn.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- SET 3 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/mem.jpg" style="width:90%"
+     onclick="document.getElementById('setMem_modal').style.display='block'">
+
+<p class="p_text">Chain, Watch, & Ring Premium Trio (Gold)<br><br>Price: $650 USD (Set)</p>
+<button onclick="addToCart('Chain, Watch, & Ring Premium Trio (Gold)',650,'../assets/mem.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- SET 4 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/menss.webp" style="width:90%"
+     onclick="document.getElementById('setCross_modal').style.display='block'">
+
+<p class="p_text">Silver Iced Cross Set (Watch + Chain + Bracelet)<br><br>Price: $720 USD (Set)</p>
+<button onclick="addToCart('Silver Iced Cross Set',720,'../assets/menss.webp')">Add to Cart</button>
+</center>
+</div>
+
+</div>
+
+<!--Modal for Men Jewelry sets section-->
+<!-- ========== MODAL: Full Men's Iced Set (Silver) ========== -->
+<div id="set12_modal" class="modal">
+<span onclick="document.getElementById('set12_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/men12.jpg" style="width:60%;border-radius:8px;"></center>
+<p><b>Full Men’s Iced Set (Necklace + Bracelet + Watch + Ring – Silver)</b></p>
+<p>Price: $780 USD</p>
+<p>Four-piece luxury set fully encrusted — perfect for elite styling, parties & stage presence.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Full Men’s Iced Set (Silver)',780,'../assets/men12.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('set12_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+
+<!-- ========== MODAL: Royal Frosted Cuban Set (Gold) ========== -->
+<div id="setGold_modal" class="modal">
+<span onclick="document.getElementById('setGold_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/mennn.jpg" style="width:60%;border-radius:8px;"></center>
+<p><b>Royal Frosted Cuban Set (Necklace + Bracelet + Watch + Ring – Gold)</b></p>
+<p>Price: $820 USD</p>
+<p>Gold-plated king-level frost finish — luxury shine built for dominant masculine styling.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Royal Frosted Cuban Set (Gold)',820,'../assets/mennn.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('setGold_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+
+<!-- ========== MODAL: Premium Trio Set (Gold) ========== -->
+<div id="setMem_modal" class="modal">
+<span onclick="document.getElementById('setMem_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/mem.jpg" style="width:60%;border-radius:8px;"></center>
+<p><b>Chain, Watch, & Ring Premium Trio (Gold)</b></p>
+<p>Price: $650 USD</p>
+<p>Three-piece set for clean flash style — iced chain, gold-face watch & matching signet ring.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Chain, Watch, & Ring Premium Trio (Gold)',650,'../assets/mem.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('setMem_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+
+<!-- ========== MODAL: Silver Iced Cross Set ========== -->
+<div id="setCross_modal" class="modal">
+<span onclick="document.getElementById('setCross_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/menss.webp" style="width:60%;border-radius:8px;"></center>
+<p><b>Silver Iced Cross Set (Watch + Chain + Bracelet)</b></p>
+<p>Price: $720 USD</p>
+<p>Silver iced + diamond cross accent — clean, spiritual, powerful men’s fashion luxury.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Silver Iced Cross Set',720,'../assets/menss.webp')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('setCross_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+<!--Mens Wallets and glasses section-->
+
+<center><u><h1 id="M_acc">Men Accessories</h1></u></center>
+<center><h2 id="w_g">Wallets and Glasses<h2></center>
+<div class="row_five">
+
+<!-- WALLET 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/w1.webp" style="width:90%"
+     onclick="document.getElementById('wallet1_modal').style.display='block'">
+
+<p class="p_text">Hugo Boss Black Textured Leather Wallet<br><br>Price: $220 USD</p>
+<button onclick="addToCart('Hugo Boss Black Textured Leather Wallet',220,'../assets/w1.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- WALLET 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/W2.webp" style="width:90%"
+     onclick="document.getElementById('walletLV_modal').style.display='block'">
+
+<p class="p_text">Louis Vuitton Damier Ebene Bifold Wallet<br><br>Price: $520 USD</p>
+<button onclick="addToCart('Louis Vuitton Damier Ebene Bifold Wallet',520,'../assets/W2.webp')">Add to Cart</button>
+</center>
+</div>
+
+<!-- GLASSES 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/gm.jpg" style="width:90%"
+     onclick="document.getElementById('mjGold_modal').style.display='block'">
+
+<p class="p_text">Marc Jacobs Gold-Frame Aviator Sunglasses<br><br>Price: $350 USD</p>
+<button onclick="addToCart('Marc Jacobs Gold-Frame Aviator Sunglasses',350,'../assets/gm.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- GLASSES 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/gm1.webp" style="width:90%"
+     onclick="document.getElementById('versace_modal').style.display='block'">
+
+<p class="p_text">Versace Tortoise-Frame Designer Eyeglasses<br><br>Price: $420 USD</p>
+<button onclick="addToCart('Versace Tortoise-Frame Designer Eyeglasses',420,'../assets/gm1.webp')">Add to Cart</button>
+</center>
+</div>
+
+</div>
+
+<!--Modal for men wallets and glasses section-->
+<!-- ========== MODAL: Hugo Boss Wallet ========== -->
+<div id="wallet1_modal" class="modal">
+<span onclick="document.getElementById('wallet1_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/w1.webp" style="width:60%;border-radius:8px;"></center>
+<p><b>Hugo Boss Black Textured Leather Wallet</b></p>
+<p>Price: $220 USD</p>
+<p>Slim handcrafted leather wallet — perfect for executives with modern luxury taste.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Hugo Boss Black Textured Leather Wallet',220,'../assets/w1.webp')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('wallet1_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+
+<!-- ========== MODAL: Louis Vuitton Wallet ========== -->
+<div id="walletLV_modal" class="modal">
+<span onclick="document.getElementById('walletLV_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/W2.webp" style="width:60%;border-radius:8px;"></center>
+<p><b>Louis Vuitton Damier Ebene Bifold Wallet</b></p>
+<p>Price: $520 USD</p>
+<p>Luxury brown-check LV design — timeless, globally recognized men’s fashion status.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Louis Vuitton Damier Ebene Bifold Wallet',520,'../assets/W2.webp')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('walletLV_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+
+<!-- ========== MODAL: Marc Jacobs Gold Aviators ========== -->
+<div id="mjGold_modal" class="modal">
+<span onclick="document.getElementById('mjGold_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/gm.jpg" style="width:60%;border-radius:8px;"></center>
+<p><b>Marc Jacobs Gold-Frame Aviator Sunglasses</b></p>
+<p>Price: $350 USD</p>
+<p>Bold gold frame + tinted luxury lenses — made for summer, style & presence.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Marc Jacobs Gold-Frame Aviator Sunglasses',350,'../assets/gm.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('mjGold_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+
+<!-- ========== MODAL: Versace Designer Eyeglasses ========== -->
+<div id="versace_modal" class="modal">
+<span onclick="document.getElementById('versace_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/gm1.webp" style="width:60%;border-radius:8px;"></center>
+<p><b>Versace Tortoise-Frame Designer Eyeglasses</b></p>
+<p>Price: $420 USD</p>
+<p>Rich tortoise pattern, museum-grade detailing — high fashion & clarity in one.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Versace Tortoise-Frame Designer Eyeglasses',420,'../assets/gm1.webp')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('versace_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+<!--Engagement rings section-->
+
+<center><u><h1 id="E_rings">Engagement Rings</h1></u></center>
+
+<div class="row_five">
+
+<!-- RING 1 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/eng.jpg" style="width:90%"
+     onclick="document.getElementById('eng1_modal').style.display='block'">
+
+<p class="p_text">Radiant Rose Gold Bridal Stack<br><br>Price: $8,900 USD</p>
+<button onclick="addToCart('Radiant Rose Gold Bridal Stack',8900,'../assets/eng.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- RING 2 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/eng1.jpg" style="width:90%"
+     onclick="document.getElementById('eng2_modal').style.display='block'">
+
+<p class="p_text">Eternal Radiance Infinity Ring<br><br>Price: $12,500 USD</p>
+<button onclick="addToCart('Eternal Radiance Infinity Ring',12500,'../assets/eng1.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- RING 3 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/eng3.jpg" style="width:90%"
+     onclick="document.getElementById('eng3_modal').style.display='block'">
+
+<p class="p_text">Classic Solitaire Spotlight Ring<br><br>Price: $7,200 USD</p>
+<button onclick="addToCart('Classic Solitaire Spotlight Ring',7200,'../assets/eng3.jpg')">Add to Cart</button>
+</center>
+</div>
+
+<!-- RING 4 -->
+<div class="column_f">
+<center class="imgbg">
+<img src="../assets/eng5.jpg" style="width:90%"
+     onclick="document.getElementById('eng4_modal').style.display='block'">
+
+<p class="p_text">Halo Brilliance Diamond Ring<br><br>Price: $9,800 USD</p>
+<button onclick="addToCart('Halo Brilliance Diamond Ring',9800,'../assets/eng5.jpg')">Add to Cart</button>
+</center>
+</div>
+</div>
+<!--modal for engagement ring section-->
+<!-- ========== MODAL: Radiant Rose Gold Bridal Stack ========== -->
+<div id="eng1_modal" class="modal">
+<span onclick="document.getElementById('eng1_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/eng.jpg" style="width:60%;border-radius:8px;"></center>
+<p><b>Radiant Rose Gold Bridal Stack</b></p>
+<p>Price: $8,900 USD</p>
+<p>Three-piece rose gold diamond set — handcrafted brilliance designed for lifetime vows.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Radiant Rose Gold Bridal Stack',8900,'../assets/eng.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('eng1_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+
+<!-- ========== MODAL: Eternal Radiance Infinity Ring ========== -->
+<div id="eng2_modal" class="modal">
+<span onclick="document.getElementById('eng2_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/eng1.jpg" style="width:60%;border-radius:8px;"></center>
+<p><b>Eternal Radiance Infinity Ring</b></p>
+<p>Price: $12,500 USD</p>
+<p>Infinity-set diamond centerpiece — symbolizing unending devotion and eternal elegance.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Eternal Radiance Infinity Ring',12500,'../assets/eng1.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('eng2_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+
+<!-- ========== MODAL: Classic Solitaire Spotlight Ring ========== -->
+<div id="eng3_modal" class="modal">
+<span onclick="document.getElementById('eng3_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/eng3.jpg" style="width:60%;border-radius:8px;"></center>
+<p><b>Classic Solitaire Spotlight Ring</b></p>
+<p>Price: $7,200 USD</p>
+<p>A timeless solitaire — flawless clarity with spotlight brilliance for the perfect proposal moment.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Classic Solitaire Spotlight Ring',7200,'../assets/eng3.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('eng3_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+
+
+<!-- ========== MODAL: Halo Brilliance Diamond Ring ========== -->
+<div id="eng4_modal" class="modal">
+<span onclick="document.getElementById('eng4_modal').style.display='none'" class="close">&times;</span>
+<form class="modal-content animate">
+
+<center><img src="../assets/eng5.jpg" style="width:60%;border-radius:8px;"></center>
+<p><b>Halo Brilliance Diamond Ring</b></p>
+<p>Price: $9,800 USD</p>
+<p>Brilliant halo-cut sparkle — for romantic proposals, grand weddings & lifetime promise.</p>
+
+<div class="container" style="background-color:#f1f1f1">
+<button onclick="addToCart('Halo Brilliance Diamond Ring',9800,'../assets/eng5.jpg')" class="cancelbtn">Add to Cart</button><br><br>
+<button onclick="document.getElementById('eng4_modal').style.display='none'" class="cancelbtn">Close</button>
+</div>
+</form>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Blue Rose Diamond</h3>
+            <p>Crafting elegance, style & timeless beauty.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="Home.html">Home</a><br>
+            <a href="Product.html">Products</a><br>
+            <a href="cart.html">Cart</a><br>
+            <a href="checkout.html">Checkout</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>Email: support@BlueRoseDiamond.com</p>
+            <p>Phone: +1 (800) 555-9923</p>
+            <p>Location: Kingston, Jamaica</p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Blue Rose Diamond. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="cart.js"></script>
+</body>
+</html>
+
+
