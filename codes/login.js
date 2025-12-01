@@ -34,7 +34,7 @@ function loginUser(){
     if(username === user.username && password === user.password){
         localStorage.setItem("userLoggedIn","true");
         alert("Login is Success!");
-        window.location.href="Home.html";
+        window.location.href="index.html";
     } else {
         alert("Wrong login — try again.");
     }
@@ -46,4 +46,5 @@ function logoutUser(){
     localStorage.removeItem("userLoggedIn");
     alert("You have been logged out.");
     window.location.reload();
+
 }
