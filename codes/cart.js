@@ -7,7 +7,7 @@ function addToCart(name, price, img) {
 	//restricts access
        if(localStorage.getItem("userLoggedIn") !== "true"){
         alert("Please login before adding items to cart.");
-        window.location.href="Login.html";
+        window.location.href="login.html";
         return;
 	   }
 
@@ -120,5 +120,6 @@ if(totalItems >= 3){
 
     // SEND VALUE TO CHECKOUT SCREEN
     document.getElementById("summary-total").innerText = finalTotal.toFixed(2);
+
 
 }
